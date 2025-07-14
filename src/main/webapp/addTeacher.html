@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Teacher</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #eef2f3, #8e9eab);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 50px 60px;
+            border-radius: 12px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+            width: 500px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2a5885;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: #2a5885;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #174c78;
+            transform: scale(1.03);
+        }
+
+        .back {
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            color: #2a5885;
+        }
+
+        .back:hover {
+            color: #174c78;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add New Teacher</h2>
+        <form method="post" action="addTeacher">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required> <!-- ✅ Added -->
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="department" placeholder="Department" required>
+            <input type="submit" value="Add Teacher">
+        </form>
+        <a href="index.html" class="back">Back to Home</a>
+    </div>
+</body>
+</html>

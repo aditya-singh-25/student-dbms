@@ -1,0 +1,121 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+	<servlet>
+    <servlet-name>AddTeacherServlet</servlet-name>
+    <servlet-class>com.servlet.AddTeacherServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>AddTeacherServlet</servlet-name>
+	    <url-pattern>/addTeacher</url-pattern>
+	</servlet-mapping>
+		
+
+	<servlet>
+    <servlet-name>ViewTeacherServlet</servlet-name>
+    <servlet-class>com.servlet.ViewTeacherServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    <servlet-name>ViewTeacherServlet</servlet-name>
+    <url-pattern>/viewTeachers</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>EditTeacherServlet</servlet-name>
+	    <servlet-class>com.servlet.EditTeacherServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>EditTeacherServlet</servlet-name>
+	    <url-pattern>/editTeacher</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>DeleteTeacherServlet</servlet-name>
+	    <servlet-class>com.servlet.DeleteTeacherServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>DeleteTeacherServlet</servlet-name>
+	    <url-pattern>/deleteTeacher</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+    <servlet-name>RegisterStudentServlet</servlet-name>
+    <servlet-class>com.servlet.RegisterStudentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>RegisterStudentServlet</servlet-name>
+	    <url-pattern>/RegisterStudentServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>RegisterTeacherServlet</servlet-name>
+	    <servlet-class>com.servlet.RegisterTeacherServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>RegisterTeacherServlet</servlet-name>
+	    <url-pattern>/RegisterTeacherServlet</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>LoginServlet</servlet-name>
+	    <url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>LogoutServlet</servlet-name>
+	    <url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	
+    <!-- Add Student-->
+    <servlet>
+        <servlet-name>AddStudent</servlet-name>
+        <servlet-class>com.servlet.AddStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddStudent</servlet-name>
+        <url-pattern>/addStudent</url-pattern>
+    </servlet-mapping>
+
+    <!-- View Students -->
+    <servlet>
+        <servlet-name>ViewStudent</servlet-name>
+        <servlet-class>com.servlet.ViewStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewStudent</servlet-name>
+        <url-pattern>/viewStudents</url-pattern>
+    </servlet-mapping>
+
+    <!-- Edit Student -->
+    <servlet>
+        <servlet-name>EditStudent</servlet-name>
+        <servlet-class>com.servlet.EditStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditStudent</servlet-name>
+        <url-pattern>/editStudent</url-pattern>
+    </servlet-mapping>
+
+    <!-- Delete Student -->
+    <servlet>
+        <servlet-name>DeleteStudent</servlet-name>
+        <servlet-class>com.servlet.DeleteStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteStudent</servlet-name>
+        <url-pattern>/deleteStudent</url-pattern>
+    </servlet-mapping>
+
+</web-app>
